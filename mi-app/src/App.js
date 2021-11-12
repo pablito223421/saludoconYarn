@@ -15,13 +15,17 @@ function App() {
   };
 
   const [stateCar,setStateCar] = useState(false);
-  
+  const [contar,setContar] =userState(0);
+
+  useEffect(() => {
+    console.log("Total:" + contar);
+  }, [contar]);
+
   const encenderApagar= () => {
-    //setStateCar(!stateCar);
-    setStateCar(prevValue =>!prevValue);
+    setStateCar(!stateCar);
+    /*setStateCar(prevValue =>!prevValue);*/
+    setContar(contar + 1);
   }
-
-
   
 
   return (
@@ -30,6 +34,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       
       <h3>El coche está {stateCar ? "Encendido" : "Apagado"}</h3>
+      <h4>Clicks: {contar} </h4>
      <button onClick={encenderApagar}>Encender/Apagar</button>
       </header>
     </div>
