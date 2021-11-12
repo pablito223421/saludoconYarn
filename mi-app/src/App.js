@@ -1,14 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Holamundo from "./components/HolaMundo";
-import Adiosmundo from "./components/AdiosMundo";
+import Saludar from "./components/Saludar";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Holamundo />
-        <Adiosmundo />
+      <Saludar name="Pedro" edad="34"/>
+      <Saludar name="Ana" edad="12"/>
+      <Saludar name="Carlos" edad="23"/>
       </header>
     </div>
   );
