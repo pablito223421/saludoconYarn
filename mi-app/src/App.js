@@ -3,7 +3,6 @@ import './App.css';
 import Saludar from "./components/Saludar";
 function App() {
   const user={
-   nombre:"Alberto Rodriguez",
    edad:"33",
    color:"negro"
   };
