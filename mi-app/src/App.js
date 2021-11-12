@@ -3,12 +3,14 @@ import './App.css';
 import Saludar from "./components/Saludar";
 function App() {
   const user={
-   edad:"33",
+   nombre:"Pablo",
+   edad:"31",
    color:"negro"
   };
 
   const saludarFn= (name)=>{
-    console.log("Hola"+ nombre);
+    console.log("Hola"+ nombre+",tiene"+edad+"años .");
+    console.log(`Hola ${nombre} , tiene ${edad} años .`);
   };
 
   return (
