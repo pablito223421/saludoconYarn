@@ -1,2 +1,2 @@
 # saludoconYarn
-Funcion Saludar
+Funcion con parametros
